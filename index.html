@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuela Stetic - Cosmetología y Estética</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header>
+    <h1 class="logo">
+      <span class="mr">MR</span> 
+      <span class="nombre">Manuela Stetic</span><br>
+      <span class="subtexto">Cosmetología y Estética</span>
+    </h1>
+
+   <!-- MENÚ HAMBURGUESA RESPONSIVE -->
+<div class="menu-container">
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+</div>
+
+  </header>
+
+  <!-- ===== SECCIÓN DE BIENVENIDA CON VIDEO ===== -->
+  <section class="hero">
+  <video autoplay muted loop playsinline class="video-fondo" id="videoFondo">
+      <source src="assets/img/fondo.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h2>Resalta tu belleza natural</h2>
+    <p>Tratamientos de cosmetología y estética integral con el toque profesional de <strong>Manuela Stetic</strong>.</p>
+    <a href="reservas.html" class="btn">Reservar ahora</a>
+  </div>
+</section>
+
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main>
+    <h2>Bienvenida a Studio MR</h2>
+    <p>Este es el inicio de tu página web de Cosmetología y Estética Integral 💅</p>
+  </main>
+
+  <!-- Script para ajustar el video -->
+  <script src="assets/js/video-ajuste.js"></script>
+
+  <footer class="footer">
+  <div class="footer-content">
+
+    <h3 class="footer-logo">MR Manuela Stetic</h3>
+
+    <p class="footer-info">
+      Cosmetología y Estética Integral<br>
+      Cali, Valle del Cauca – Colombia
+    </p>
+
+    <!-- Redes Sociales -->
+    <div class="footer-redes">
+      <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/573146923786" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p class="footer-copy">
+      © 2025 MR Manuela Stetic · Todos los derechos reservados
+    </p>
+
+  </div>
+</footer>
+
+<!-- FONT AWESOME PARA LOS ICONOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+igin="anonymous"></script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
