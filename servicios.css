@@ -1,0 +1,133 @@
+/* ===== TIPOGRAFÍAS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Prata&family=Poppins:wght@300;400;500&display=swap');
+
+/* ===== SECCIÓN GENERAL ===== */
+.servicios-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.servicios-section h2 {
+  font-family: "Prata", serif;
+  font-size: 2.4rem;
+  color: #000; /* NEGRO */
+  margin-bottom: 0.5rem;
+}
+
+.servicios-section p {
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== TÍTULO DE CATEGORÍA ===== */
+.categoria-titulo {
+  font-family: "Prata", serif;
+  font-size: 1.9rem;
+  margin: 2rem 0 1rem;
+  color: #000; /* NEGRO */
+  text-align: left;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  border-left: 4px solid #c28b57;
+}
+
+/* ===== GRID ===== */
+.servicios-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  padding: 1rem;
+}
+
+/* ===== TARJETAS ===== */
+.card-servicio {
+  background-color: #fdf9f6;
+  border-radius: 14px;
+  padding: 1.2rem;
+  border: 1px solid #eaded3;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-servicio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== TÍTULO Y DESCRIPCIÓN ===== */
+.card-servicio h4 {
+  font-family: "Prata", serif;
+  color: #000; /* NEGRO */
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-servicio p {
+  color: #444;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.card-servicio .btn {
+  background-color: #9f7040;
+  color: #ffffff;
+  text-align: center;
+  width: 70%;              /* MÁS ANGOSTO */
+  margin: 0 auto;          /* CENTRADO */
+  padding: 0.6rem;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+
+
+.card-servicio .btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -120%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: skewX(-20deg);
+  transition: 0.55s ease;
+}
+
+
+
+.card-servicio .btn:hover::before {
+  left: 120%;
+}
+
+.card-servicio .btn:hover {
+  background-color: #c28b57;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .categoria-titulo {
+    font-size: 1.6rem;
+    padding-left: 0.4rem;
+  }
+
+  .card-servicio h4 {
+    font-size: 1.2rem;
+  }
+
+  .card-servicio {
+    padding: 1rem;
+  }
+}
+
+
